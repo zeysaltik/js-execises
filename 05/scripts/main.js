@@ -17,7 +17,7 @@
 // let mixedDataTypes = [5, "zeynep", true, [], {}, null, undefined]
 // console.log(mixedDataTypes.length)
 
-let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon", "Spotify", "Folkart", "Monolift"]
+let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 console.log(itCompanies)
 console.log(itCompanies.length)
 
@@ -50,13 +50,10 @@ let sentence = "are big IT companies"
 let sentence2 = itCompanies.concat(sentence)
 console.log(sentence2.toString())
 
-
-// let finalSentence = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon and Spotify are big IT companies."
-
 let lastIndex = itCompanies.length - 1;
 console.log(itCompanies[lastIndex])
 let fisrt6ItCompanies = itCompanies.slice(0, lastIndex)
-console.log(fisrt6ItCompanies)
+// console.log(fisrt6ItCompanies)
 
 let mySentence1 = fisrt6ItCompanies.join(", ")
 console.log(mySentence1)
@@ -81,8 +78,13 @@ console.log(myFinalSentence)
 // console.log(itCompanies.toString())
 
 
-
-// console.log(itCompanies.indexOf("GOOGLE"))
+let indexOfGoogle = itCompanies.indexOf("Google")
+if (indexOfGoogle == -1) {
+    console.log("not found")
+}
+else {
+    console.log("Google")
+}
 
 // itCompanies.sort()
 // console.log(itCompanies)
@@ -90,35 +92,52 @@ console.log(myFinalSentence)
 // itCompanies.reverse()
 // console.log(itCompanies)
 
-// // console.log(itCompanies.slice(0, 3))
-// // console.log(itCompanies.slice(4, 7))
-// // console.log(itCompanies.slice(3, 4))
+console.log(itCompanies.slice(0, 3))
+console.log(itCompanies.slice(itCompanies.length - 3, itCompanies.length))
+console.log(itCompanies.slice(Math.round(itCompanies.length / 2) - 1, Math.round(itCompanies.length / 2)))
 
-// // console.log(itCompanies.splice(0, 1))
-// // console.log(itCompanies.splice(3, 1))
-// console.log(itCompanies.splice(6, 1))
-// itCompanies.splice()
-// console.log(itCompanies)
+console.log(itCompanies.splice(0, 1))
+console.log(itCompanies)
 
-// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-// text = text.replace(/\./g, '').replace(/\,/g, '')
-// console.log(text)
-// let text1 = text.split(' ')
-// console.log(text1)
-// console.log(text1.length)
+console.log("Ortadan Silme")
+console.log(itCompanies.splice((itCompanies.length / 2) - 1, 1))
+console.log(itCompanies)
 
-// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
-// shoppingCart.unshift("Meat")
-// console.log(shoppingCart)
+console.log(itCompanies.splice(itCompanies.length - 1, 1))
+console.log(itCompanies)
 
-// shoppingCart.push("Sugar")
-// console.log(shoppingCart)
+console.log("Hepsini Silme")
+console.log(itCompanies.splice(0))
+console.log(itCompanies)
 
-// console.log(shoppingCart.splice(4, 1))
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+text = text.replace(/\./g, '').replace(/\,/g, '')
+console.log(text)
+let text1 = text.split(' ')
+console.log(text1)
+console.log(text1.length)
 
-// shoppingCart[3] = "Green Tea"
-// console.log(shoppingCart)
+const shoppingCart = ["Meat", 'Milk', 'Coffee', 'Tea', 'Honey']
+
+let indexOfMeat = shoppingCart.indexOf("Meat")
+if (indexOfMeat == -1) {
+    shoppingCart.unshift("Meat")
+}
+console.log(shoppingCart)
+
+let indexOfSugar = shoppingCart.indexOf("Sugar")
+if (indexOfSugar == -1) {
+    shoppingCart.push("Sugar")
+}
+console.log(shoppingCart)
+
+console.log(shoppingCart.splice(4, 1))
+
+console.log(shoppingCart.indexOf("Tea"))
+shoppingCart[3] = "Green Tea"
+console.log(shoppingCart)
+
 
 // const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 // const backEnd = ['Node', 'Express', 'MongoDB']
@@ -126,14 +145,14 @@ console.log(myFinalSentence)
 
 // console.log(fullStack)
 
-// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+console.log(ages)
 
-// ages.sort((a, b) => a - b)
-// let minAge = ages[0]
-// console.log(minAge)
+console.log(ages[0])
 
-// let maxAge = ages[ages.length - 1]
-// console.log(maxAge)
+console.log(ages[ages.length - 1])
+console.log(ages.length)
+console.log(ages.slice(Math.round(ages.length / 2) - 1, Math.round(ages.length / 2)))
 
-// diff = maxAge - minAge
-// console.log(diff)
+console.log(ages[ages.length-1] - ages[0])

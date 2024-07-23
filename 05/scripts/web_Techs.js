@@ -1,20 +1,24 @@
-const  webTechs = [
+const webTechs = [
 
     'HTML',
-    
+
     'CSS',
-    
+
     'JavaScript',
-    
+
     'React',
-    
+
     'Redux',
-    
+
     'Node',
-    
+
     'MongoDB'
-    
-    ]
-console.log(webTechs.indexOf("Sass"))
-webTechs.unshift("Sass")
+
+]
+let indexOfSass = webTechs.indexOf("Sass")
+if (indexOfSass == -1) {
+    webTechs.push("Sass")
+} else {
+    console.log("Sass is a CSS preprocess")
+}
 console.log(webTechs)

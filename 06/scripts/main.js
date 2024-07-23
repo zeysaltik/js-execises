@@ -16,15 +16,16 @@ while (i2 >= 10) {
     i2--
 }
 
+let i3 = 0
 do {
-    console.log(i2)
-    i2--
-} while (i2 >= 10)
+    console.log(i3)
+    i3--
+} while (i3 >= 10)
 
-const n = 10;
-for (let i = 0; i <= n; i++) {
-    console.log(i)
-}
+// const n = 10;
+// for (let i = 0; i <= n; i++) {
+//     console.log(i)
+// }
 
 for (let i = 0; i <= 7; i++) {
     let line = '';

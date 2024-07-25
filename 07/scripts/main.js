@@ -1,3 +1,5 @@
+
+
 function fullName1() {
     console.log("Zeynep nur saltık")
 }
@@ -11,13 +13,13 @@ function fullName() {
     let namee = firstName + space + secondName + space + lastName
     console.log(namee)
 }
-(fullName())
+fullName()
 
 function addNumbers(numOne, numTwo) {
     let sum = numOne + numTwo
     console.log(sum)
 }
-addNumbers(2, 2)
+addNumbers(5, 2)
 
 function areaOfRectangle(length, width) {
     let area = length * width
@@ -89,6 +91,27 @@ if (bodyMassIndex <= 18, 5) {
     console.group("Obese")
 }
 
+function checkSeason(month) {
+    if (month == "aralık " || month == "ocak" || month == "şubat") {
+        return "kış"
+    }
+    else if (month == "mart" || month == "nisan" || month == "mayıs") {
+        return "ilkbahar"
+    }
+    else if (month == "haziran" || month == "temmuz" || month == "ağustos") {
+        return "yaz"
+    }
+    else if (month == "eylül " || month == "ekim" || month == "kasım") {
+        return "sonbahar"
+    }
+}
+
+let blabla = checkSeason("temmuz")
+console.log(blabla)
+
+
+
+
 function findMax() {
     let maxNum = Math.max(0, 10, 5)
     console.log(maxNum)
@@ -104,11 +127,69 @@ findMax1(0, -10, -2)
 function solveLinEquation(a, b, c, x, y) {
     return a * x + b * y + c
 }
-let a = 1
-let b = 2
-let c = 3
-let x = 4
-let y = 5
-let result = solveLinEquation(a, b, c, x, y) 
-console.log(result)
+console.log(solveLinEquation(1, 2, 3, 4, 5))
+
+function solveLinEquation1(a1, b1, c1, x1) {
+
+    let toplam = a1 + b1;
+    let carpim = a1 * b1;
+    return carpim + toplam;
+}
+
+let cevap = solveLinEquation1(5, 8, 7, 9) * 2
+console.log(cevap / 2)
+
+function islem(q, a, z, b, c, d,) {
+    let cevap = q + c;
+    return cevap / 3;
+}
+let response = islem(4, 0, 0, 0, 4)
+console.log(4)
+
+function names(Zeynep, Deniz, Mustafa, Saniye) {
+    return Zeynep, Deniz, Mustafa, Saniye
+}
+let namess = "Zeynep, Deniz, Mustafa, Saniye"
+console.log(namess)
+
+function swapValues(x, y) {
+    return [y, x];
+}
+let x = 3;
+let y = 5;
+[x, y] = swapValues(x, y);
+console.log(x);
+console.log(y);
+
+function capitalizeArray(word) {
+    return word
+}
+let word = "blablabla"
+let upperWord = word.toUpperCase()
+capitalizeArray("blablabla")
+console.log(upperWord)
+
+
+function sumNumbers(number1, number2, number3) {
+    let sum = number1 + number2 + number3
+    console.log(sum)
+}
+sumNumbers(1, 2, 3)
+
+function sumNumbers1(num1, num2, num3, num4) {
+    let sum1 = num1 + num2 + num3 + num4
+    console.log(sum1)
+}
+sumNumbers1(1, 2, 3, 4)
+
+function generateRandomIP() {
+    function getRandomByte() {
+        return Math.floor(Math.random() * 256);
+    }
+
+    return `${getRandomByte()}.${getRandomByte()}.${getRandomByte()}.${getRandomByte()}`;
+}
+
+let randomIP = generateRandomIP();
+console.log(randomIP); 
 
